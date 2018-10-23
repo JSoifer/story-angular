@@ -5,18 +5,20 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
-import { AppRoutingModule } from './app-routing.module';
+import { routing } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StoryDisplayComponent } from './story-display/story-display.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StoryDisplayComponent
+    StoryDisplayComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    routing,
     AngularFireModule.initializeApp(masterFirebaseConfig),
     AngularFireDatabaseModule
   ],

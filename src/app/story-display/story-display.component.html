@@ -3,6 +3,6 @@
 </p>
 
 <div class="container">
-  <h4>{{currentPage}}</h4>
-  <p>{{currentContent}}</p>
+  <h3>{{(currentPage | async)?.page}}</h3>
+  <p>{{(currentPage | async)?.content}}</p>
 </div>

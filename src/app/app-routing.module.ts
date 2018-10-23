@@ -1,10 +1,18 @@
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { WelcomeComponent }  from './welcome/welcome.component';
+import { StoryDisplayComponent }  from './story-display/story-display.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: WelcomeComponent
+  },
+  {
+  path: 'story/:page',
+  component: StoryDisplayComponent
+}
+];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+
+export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
