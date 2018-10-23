@@ -1,7 +1,11 @@
-{ "stories": [{
-    "segment": [{
-      "page": 1,
-      "content": "Sample content",
-      }]
-    }]
+{ "pages": [{
+  "number": "1",
+  "content": "Sample Page 1"
+  }, {
+    "number": "2",
+    "content": "Sample Page 2"
+  }, {
+    "number": "3",
+    "content": "Sample Page 3"
+  }]
 }

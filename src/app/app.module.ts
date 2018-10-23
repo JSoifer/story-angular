@@ -7,10 +7,12 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StoryDisplayComponent } from './story-display/story-display.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StoryDisplayComponent
   ],
   imports: [
     BrowserModule,
